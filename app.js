@@ -1,25 +1,22 @@
-function plus(a, b) {
-    console.log(a + b);
-}
+const a = 5;
+let isNicoFat = true;
 
-function divide(a, b) {
-    console.log(a / b);
-}
+console.log(a);
+console.log(isNicoFat);
+isNicoFat = false;
+console.log(isNicoFat);
 
-plus(8, 60);
-divide(40, 8);
+let b;          // undefined
+const c = null; // null
 
-console.log("--------------------------------");
+console.log(b);
+console.log(c);
 
-// --------------------------------------------------
+const me = "sexy";
+const days = [1, 2, false, true, null, undefined, "text", me]; 
 
-const player = {
-    name : "sulgi", 
-    sayHello : function(otherPersonsName) {
-        console.log("hello! "+otherPersonsName + " nice to meet you");
-    }
-}
-
-console.log(player.name);
-player.sayHello("lynn");
-player.sayHello("nico");
+console.log(days);
+console.log(days[2], days[2] = true);
+console.log(days);
+days.push("you");
+console.log(days);
