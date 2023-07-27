@@ -1,22 +1,43 @@
-const a = 5;
-let isNicoFat = true;
+const player = {
+    name : "sulgi",
+    age : 98,
+};
 
-console.log(a);
-console.log(isNicoFat);
-isNicoFat = false;
-console.log(isNicoFat);
+console.log(player);
+player.name = "nicolas"
+console.log(player);
+player.sexy = "soon";
+console.log(player);
 
-let b;          // undefined
-const c = null; // null
+console.log("-------------------------")
 
-console.log(b);
-console.log(c);
+function plus(a, b) {
+    console.log(a + b);
+}
 
-const me = "sexy";
-const days = [1, 2, false, true, null, undefined, "text", me]; 
+plus(2, 3);
 
-console.log(days);
-console.log(days[2], days[2] = true);
-console.log(days);
-days.push("you");
-console.log(days);
+console.log("test-----------------------")
+
+const calculator = {
+    add : function(a, b) {
+        console.log(a + b);
+    },
+
+    minus : function(a, b) {
+        console.log(a - b);
+    },
+
+    div : function(a, b) {
+        console.log(a/b);
+    }, 
+
+    powerof : function(a, b) {
+        console.log(a**b);
+    }
+};
+
+calculator.add(2,1);
+calculator.minus(2,1);
+calculator.div(10,2);
+calculator.powerof(5,2);
