@@ -1,11 +1,9 @@
-const hellos = document.getElementsByClassName("hello");
-let title = document.getElementsByTagName("h1");
+const title = document.querySelector("div.hello:first-child h1")
 
-title = document.getElementById("hello");
-title = document.querySelector("#hello"); // 위의 코드와 작동이 완전히 같다.
+function handleTitleClick() {
+    title.style.color = "blue";
+    console.log("title was clicked");
+}
 
-title = document.querySelector(".hello h1");
-title = document.querySelector("div h2"); // null
-title = document.querySelector("div h1");
-title = document.querySelectorAll("div h1");
-console.log(title);
+
+title.addEventListener("click", handleTitleClick);  // 함수의 괄호()를 넣지 않아야 한다. 
