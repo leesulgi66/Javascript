@@ -9,11 +9,4 @@ function onLoginSubmit(event) { // JS의 event 함수는 첫번째 전달인자�
     console.log(username);
 }
 
-function handleLinkClick(event) {
-    event.preventDefault();
-    console.log(event);
-    console.dir("clicked");
-}
-
 loginForm.addEventListener("submit", onLoginSubmit);
-link.addEventListener("click", handleLinkClick);
