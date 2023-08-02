@@ -9,6 +9,7 @@ function onLoginSubmit(event) { // JS의 event 함수는 첫번째 전달인자�
     const username = loginInput.value;
     loginForm.classList.add(HIDDEN_CLASS);
     console.log(username);
+    localStorage.setItem("username", username);
     // greeting.innerText = "Hello " + username;
     greeting.innerText = `Hello ${username}`; // 12번 코드와 값다. ``백틱 안에 ${변수명} 으로 변수값(String)을 넣을 수 있다.
     greeting.classList.remove(HIDDEN_CLASS);
