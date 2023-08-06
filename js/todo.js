@@ -30,7 +30,7 @@ function paintToDo(newTodo) {
 }
 
 function handleToDoSubmit(event) {
-    event.preventDefault();
+    event.preventDefault(); // submit의 기본 실해 정지(새로고침기능 정지);
     const newTodo = toDoInput.value;
     toDoInput.value = "";
     const newTodoObj = {
@@ -50,5 +50,12 @@ console.log(savedToDos);
 if(savedToDos) {
     const parsedToDos = JSON.parse(savedToDos);
     toDos = parsedToDos;
-    parsedToDos.forEach(paintToDo);
+    parsedToDos.forEach(paintToDo);  // forEach 각각의 요소마다 해당 함수를 실행해 준다.
 }
+
+
+function sexyFilter(item) {
+    return item !== 3;
+}
+
+[1, 2, 3, 4].filter(sexyFilter); // 필터는 true를 반한하는 값만 유지한다.
