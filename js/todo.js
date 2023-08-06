@@ -2,11 +2,11 @@ const toDoForm = document.querySelector("#todo-form");
 const toDoInput = toDoForm.querySelector("input");  //  ===  const toDoInput = document.querySelector("#todo-form input")
 const toDoList = document.getElementById("todo-list");
 
-const TODOS_KEY = "todos";
-let toDos = [];
+const TODOS_KEY = "todos";  // 실수를 방지해 줄 String 변수값
+let toDos = []; // 빈 배열 초기화
 
 function saveToDos() {
-    localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));
+    localStorage.setItem(TODOS_KEY, JSON.stringify(toDos));  // localStorage는 String만을 저장하기 때문에 JSON.stringify 함수를 이용해 오브젝트나 배열을 String으로 변환 후 저장해야 한다.
 }
 
 function deleteToDo(event) {
@@ -48,7 +48,7 @@ toDoForm.addEventListener("submit", handleToDoSubmit);
 const savedToDos = localStorage.getItem(TODOS_KEY)
 
 if(savedToDos) {
-    const parsedToDos = JSON.parse(savedToDos);
+    const parsedToDos = JSON.parse(savedToDos); // String으로 저장된 배열이나 오브젝트를 JONS.parse()를 이용해 파싱해준다.
     toDos = parsedToDos;
     parsedToDos.forEach(paintToDo);  // forEach 각각의 요소마다 해당 함수를 실행해 준다.
 }
