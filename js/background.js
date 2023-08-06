@@ -10,4 +10,5 @@ const bgImage = document.createElement("img");  // document에 img를 추가
 
 bgImage.src = `img/${chosenImage}`; // img의 주소를 랜덤으로 설정된 값으로 설정
 
-document.body.appendChild(bgImage) // 9번,11번,13번 세줄의 역할은 html에 <img src=""/> 를 해주는 것과 동일하다. 
+document.body.style.backgroundImage = `url(img/${chosenImage})`;  // backgroundImage로 배경화면 설정
+// document.body.appendChild(bgImage) // 9번,11번,13번 세줄의 역할은 html에 <img src=""/> 를 해주는 것과 동일하다. 
