@@ -11,8 +11,9 @@ function saveToDos() {
 
 function deleteToDo(event) {
     const li = event.target.parentElement;
-    console.log(li.id);
     li.remove();
+    toDos = toDos.filter(toDo => toDo.id !== parseInt(li.id)); // filter는 항상 새로운 array를 반환. id가 같으면 false가 되고 new array에 포함되지 않는다.
+    saveToDos();  // 변경된 정보를 저장.
 }
 
 function paintToDo(newTodo) {
@@ -45,17 +46,9 @@ function handleToDoSubmit(event) {
 toDoForm.addEventListener("submit", handleToDoSubmit);
 
 const savedToDos = localStorage.getItem(TODOS_KEY)
-console.log(savedToDos);
 
 if(savedToDos) {
     const parsedToDos = JSON.parse(savedToDos);
     toDos = parsedToDos;
     parsedToDos.forEach(paintToDo);  // forEach 각각의 요소마다 해당 함수를 실행해 준다.
 }
-
-
-function sexyFilter(item) {
-    return item !== 3;
-}
-
-[1, 2, 3, 4].filter(sexyFilter); // 필터는 true를 반한하는 값만 유지한다.
