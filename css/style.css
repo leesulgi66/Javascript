@@ -9,7 +9,7 @@ html, body, div, span, h1, h2, h3, ul, li {
 }
 
 h1, ul, li, span {
-    text-align: center;
+    text-align: center; 
 }
 
 .hidden {
