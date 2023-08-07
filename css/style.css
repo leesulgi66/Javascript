@@ -5,6 +5,11 @@ html, body, div, span, h1, h2, h3, ul, li {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+
+h1, ul, li, span {
+    text-align: center;
 }
 
 .hidden {
