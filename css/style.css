@@ -7,6 +7,10 @@ html, body, div, span, h1, h2, h3, ul, li {
 	vertical-align: baseline;
 }
 
+h1, ul, li, span {
+	text-align: center;
+}
+
 .hidden {
     display : none;
 }
