@@ -16,6 +16,11 @@ input {
 	background-color:transparent;
 }
 
+#clock {
+	font-size: 10rem;
+	font-family: 'Rajdhani', sans-serif;
+}
+
 .hidden {
     display : none;
 }
