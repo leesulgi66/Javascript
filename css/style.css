@@ -11,6 +11,10 @@ h1, ul, li, span {
 	text-align: center;
 }
 
+input {
+	background-color:transparent;
+}
+
 .hidden {
     display : none;
 }
