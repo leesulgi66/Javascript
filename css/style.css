@@ -8,17 +8,46 @@ html, body, div, span, h1, h2, h3, ul, li {
     font-family: 'Nanum Gothic Coding', monospace;
 }
 
-h1, ul, li, span {
-    text-align: center; 
+h1 {
+	text-align: center; 
+	color : white;
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+	/* text-shadow: 2px 2px 2px gray; */
+	
+}
+
+#quote{
+	text-align: center; 
+	color : blanchedalmond;
+	text-shadow: 2px 2px 2px gray;
+}
+
+#todo-form {
+	width : 15rem;
+	margin : 0 auto;
 }
 
 input {
+	width : 12rem;
 	background-color:transparent;
 }
 
+input::placeholder {
+	color : white;
+	text-shadow: 2px 2px 2px gray;
+}
+
 #clock {
+	text-align: center; 
+	color : white;
 	font-size: 10rem;
 	font-family: 'Rajdhani', sans-serif;
+	text-shadow: 2px 2px 2px black;
+	margin: 0 auto;
+}
+
+ul, li {
+	text-align: center; 
 }
 
 .hidden {
