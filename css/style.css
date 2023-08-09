@@ -5,30 +5,33 @@ html, body, div, span, h1, h2, h3, ul, li {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-    font-family: 'Nanum Gothic Coding', monospace;
 }
 
 h1 {
+	font-family: 'Rajdhani', sans-serif;
 	text-align: center; 
 	color : white;
+	font-size : 3rem;
 	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 	/* text-shadow: 2px 2px 2px gray; */
 	
 }
 
 #quote{
+	font-family: 'Nanum Brush Script', cursive;
 	text-align: center; 
 	color : blanchedalmond;
 	text-shadow: 2px 2px 2px gray;
 }
 
 #todo-form {
-	width : 15rem;
+	width : 11rem;
 	margin : 0 auto;
 }
 
 input {
-	width : 12rem;
+	color : white;
+	width : 11rem;
 	background-color:transparent;
 }
 
@@ -47,6 +50,7 @@ input::placeholder {
 }
 
 ul, li {
+	color : white;
 	text-align: center; 
 }
 
