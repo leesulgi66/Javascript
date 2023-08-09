@@ -7,7 +7,7 @@ html, body, div, span, h1, h2, h3, ul, li {
 	vertical-align: baseline;
 }
 
-h1 {
+#greeting {
 	font-family: 'Rajdhani', sans-serif;
 	text-align: center; 
 	color : white;
@@ -18,13 +18,20 @@ h1 {
 }
 
 #quote{
+	padding-top : 50px;
 	font-family: 'Nanum Brush Script', cursive;
+	font-size : 30px;
 	text-align: center; 
 	color : blanchedalmond;
 	text-shadow: 2px 2px 2px gray;
 }
 
 #todo-form {
+	width : 11rem;
+	margin : 0 auto;
+}
+
+#login-form {
 	width : 11rem;
 	margin : 0 auto;
 }
@@ -41,6 +48,7 @@ input::placeholder {
 }
 
 #clock {
+	padding : 200px 20px 20px 20px;
 	text-align: center; 
 	color : white;
 	font-size: 10rem;
@@ -50,8 +58,17 @@ input::placeholder {
 }
 
 ul, li {
+	font-family: 'Rajdhani', sans-serif;
 	color : white;
 	text-align: center; 
+	text-shadow: 2px 2px 2px gray;
+}
+
+button {
+	border: none;
+	border-radius: 6px;
+	color : gray;
+	border-color : snow;
 }
 
 .hidden {
